@@ -21,7 +21,6 @@ def password_generator(length=12):
 
     # shuffle through the list
     random.shuffle(printable)
-
     random_password = random.choices(printable, k=length)
     random_password = ''.join(random_password)
     return random_password
